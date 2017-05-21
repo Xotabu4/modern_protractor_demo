@@ -5,12 +5,12 @@ let conf: Config = {
   baseUrl: 'http://www.protractortest.org/testapp/ng1/#/form',
   specs: ['./experiment.js'],
 
-
   multiCapabilities: [
     {browserName: "chrome"},
     {browserName: "opera"},
     {browserName: "firefox"}
   ],
+  
   SELENIUM_PROMISE_MANAGER: false
 };
 

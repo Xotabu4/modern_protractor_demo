@@ -9,12 +9,12 @@
     "postinstall": "webdriver-manager update",
     "tsc": "tsc",
     "tscw": "tsc -w",
-    "preasyncawaitexample": "tsc -p ./async_await/tsconfig.json",
-    "asyncawaitexample": "protractor ./async_await/protractor.conf.js",
-    "pretsexample": "tsc",
-    "tsexample": "protractor ./typescript/protractor.conf.js",
-    "precontainers": "tsc",
-    "containersexample": "protractor ./containers/protractor.conf.js"
+    "preasyncawait-example": "tsc -p ./async_await/tsconfig.json",
+    "asyncawait-example": "protractor ./async_await/protractor.conf.js",
+    "prets-example": "tsc",
+    "ts-example": "protractor ./typescript/protractor.conf.js",
+    "precontainers-example": "tsc && docker run -d --name selenoid -p 4444:4444 -v `pwd`:/etc/selenoid:ro -v /var/run/docker.sock:/var/run/docker.sock aerokube/selenoid",
+    "containers-example": "protractor ./containers/protractor.conf.js"
   },
   "devDependencies": {
     "@types/jasmine": "^2.5.47",
