@@ -8,8 +8,13 @@
   "scripts": {
     "postinstall": "webdriver-manager update",
     "tsc": "tsc",
-    "tscw": "cd async_await && tsc -w",
-    "tsexample": "tsc -p ./typescript/tsconfig.json"
+    "tscw": "tsc -w",
+    "preasyncawaitexample": "tsc -p ./async_await/tsconfig.json",
+    "asyncawaitexample": "protractor ./async_await/protractor.conf.js",
+    "pretsexample": "tsc",
+    "tsexample": "protractor ./typescript/protractor.conf.js",
+    "precontainers": "tsc",
+    "containersexample": "protractor ./containers/protractor.conf.js"
   },
   "devDependencies": {
     "@types/jasmine": "^2.5.47",
