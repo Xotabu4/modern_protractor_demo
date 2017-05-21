@@ -22,6 +22,7 @@
     "jasmine-protractor-matchers": "^1.0.1",
     "protractor": "^5.1.1",
     "protractor-element-extend": "^2.0.1",
-    "typescript": "^2.3.2"
+    "typescript": "^2.3.2",
+    "tslint": "^5.0.0"
   }
 }
