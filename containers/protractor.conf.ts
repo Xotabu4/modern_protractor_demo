@@ -5,11 +5,18 @@ let conf: Config = {
   baseUrl: 'http://www.protractortest.org/testapp/ng1/#/form',
   specs: ['./specs/**.js'],
 
-  capabilities: {
+  multiCapabilities: [{
     browserName: "chrome",
     shardTestFiles: true,
     maxInstances: 4
   },
+  // {
+  //   browserName: "operablink",
+  //   "operaOptions": { "binary": "/usr/bin/opera" },
+  //   shardTestFiles: true,
+  //   maxInstances: 5
+  // }
+  ],
 
   SELENIUM_PROMISE_MANAGER: false
 };
