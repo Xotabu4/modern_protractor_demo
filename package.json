@@ -14,7 +14,9 @@
     "prets-example": "tsc",
     "ts-example": "protractor ./typescript/protractor.conf.js",
     "precontainers-example": "tsc && docker run -d --name selenoid -p 4444:4444 -v `pwd`:/etc/selenoid:ro -v /var/run/docker.sock:/var/run/docker.sock aerokube/selenoid",
-    "containers-example": "protractor ./containers/protractor.conf.js"
+    "containers-example": "protractor ./containers/protractor.conf.js",
+    "prepageobjects": "tsc",
+    "pageobjects": "protractor ./pagefragments/protractor.conf.js"
   },
   "devDependencies": {
     "@types/jasmine": "^2.5.47",
