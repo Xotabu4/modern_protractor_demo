@@ -3,14 +3,14 @@ import { Config, ExpectedConditions, $ } from 'protractor'
 let conf: Config = {
   seleniumAddress: "http://localhost:4444/wd/hub",
   baseUrl: 'http://www.protractortest.org/testapp/ng1/#/form',
-  specs: ['./experiment.js'],
+  specs: ['./specs/**.js'],
 
-  multiCapabilities: [
-    {browserName: "chrome"},
-    {browserName: "opera"},
-    {browserName: "firefox"}
-  ],
-  
+  capabilities: {
+    browserName: "chrome",
+    shardTestFiles: true,
+    maxInstances: 4
+  },
+
   SELENIUM_PROMISE_MANAGER: false
 };
 

@@ -13,7 +13,8 @@
     "asyncawait-example": "protractor ./async_await/protractor.conf.js",
     "prets-example": "tsc",
     "ts-example": "protractor ./typescript/protractor.conf.js",
-    "precontainers-example": "tsc && docker run -d --name selenoid -p 4444:4444 -v `pwd`:/etc/selenoid:ro -v /var/run/docker.sock:/var/run/docker.sock aerokube/selenoid",
+    "start-selenoid": "docker run -d --name selenoid -p 4444:4444 -v `pwd`:/etc/selenoid:ro -v /var/run/docker.sock:/var/run/docker.sock aerokube/selenoid",
+    "precontainers-example": "tsc",
     "containers-example": "protractor ./containers/protractor.conf.js",
     "prepageobjects": "tsc",
     "pageobjects": "protractor ./pagefragments/protractor.conf.js"
